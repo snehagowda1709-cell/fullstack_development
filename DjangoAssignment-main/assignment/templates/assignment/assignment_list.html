@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment List</title>
+</head>
+<body>
+    <h1>Assignments</h1>
+    <ul>
+        {% for assignment in assignments %}
+            <li>{{ assignment.name }}</li>
+        {% empty %}
+            <li>No assignments found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
